@@ -1,2 +1,2 @@
-FROM openjdk:8-jdk-alpine
-ech "build success"
+FROM ubuntu:latest
+echo "build success"
