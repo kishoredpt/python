@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:latest
+    steps:
+      - checkout
+      - run: print "hello"
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
